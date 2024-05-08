@@ -88,7 +88,7 @@ public class Um extends JFrame {
                 File fileToSave = fileChooser.getSelectedFile();
                 try (FileOutputStream out = new FileOutputStream(fileToSave)) {
                     out.write(textArea.getText().getBytes());
-                    JOptionPane.showMessageDialog(Um.this, "Arquivo salvo com sucesso!", "Arquivo Salvo", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(Um.thies, "Arquivo salvo com sucesso!", "Arquivo Salvo", JOptionPane.INFORMATION_MESSAGE);
                 } catch (IOException ex) {
                     JOptionPane.showMessageDialog(Um.this, "Erro ao salvar o arquivo: " + ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE);
                 }
